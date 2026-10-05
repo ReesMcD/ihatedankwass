@@ -1,6 +1,6 @@
-import Navbar from '../components/navigation/navbar.component';
+import type { ReactNode } from 'react';
 
-const Base = ({ children }) => {
+const Base = ({ children }: { children: ReactNode }) => {
   return (
     <div>
       <header />
@@ -9,4 +9,5 @@ const Base = ({ children }) => {
     </div>
   );
 };
+
 export default Base;
